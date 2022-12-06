@@ -1,0 +1,129 @@
+//main: ../style.less
+.section__window{
+    display: none;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: @ColorTwo;
+}
+.section__window::before{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bacground/texture.jpg);
+    filter: blur(8px);
+    opacity: 0.98;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.show{
+    display: flex;
+}
+.modal{
+    display: flex;
+    width: 43rem;
+    height: 59rem;
+    margin: 0 auto;
+    transform: rotateX(90deg);
+    transition: transform .2s linear;
+    color: @colorOne;
+    // text-shadow: 1px 0 1px @colorNine,
+    // 0 1px 1px @colorNine,
+    // -1px 0 1px @colorNine,
+    // 0 -1px 1px @colorNine;
+    border-radius: 2rem;
+    position: relative;
+}
+.modal::before{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-image: url(../img/bacground/wave.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(5px);
+}
+.modal__content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.modal_blog{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.btn_close img {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    z-index: 1;
+    transition: transform 0.4s linear;
+}
+.btn_close img:hover {
+    transform:rotate(90deg);
+}
+.title__content{
+    margin: 1rem 8.6rem 2.95rem 3.2rem;
+}
+.title__content h5{
+    font-size: 4.5rem;
+}
+.title__content span{
+    font-size: 1.6 rem;
+}
+.info__request{
+    padding-left: 3.48rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.info__request_item{
+    padding-bottom: 0.7rem;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.info__request_item img {
+    margin-right: 1rem;
+}
+.form__request{
+    margin-left: 3.49rem;
+    width: 36rem;
+    margin-bottom: 3rem;
+}
+.title__request{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+.input_form{
+    width: 100%;
+    height:5.4rem;
+    border: 1px solid fade(@colorFive, 70%);
+    border-radius: 2rem;
+    margin-bottom: 2.7rem;
+    margin-top: 0.8rem;
+    padding-left: 1rem;
+}
+.textarea_form{
+    width: 100%;
+    height: 20rem;
+    border: 1px solid fade(@colorFive, 70%);
+    border-radius: 2rem;
+    margin-top: 0.8rem;
+    padding-left: 1rem;
+}

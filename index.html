@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
+    <link rel="stylesheet" href="css/style.css">
+       <!-- ==========jquery========== -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header__inner">
+            <nav class="header__nav">
+                <a class="nav__item" data-scroll="#section_home">Home</a>
+                <a class="nav__item" data-scroll="#section_about">About me</a>
+                <a class="nav__item" data-scroll="#skils_window">My skills</a>
+                <a class="nav__item" data-modal="#section__modal">Contact me</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <!-- =====титульный лист====== -->
+
+    <section class="section" id="section_home">
+        <div class="container">
+            <h1 class="section__title">Junior Frontend developer</h1>
+            <div class="section__inner">
+                <div class="section__content">
+                    <div class="content__inner">
+                        <h5 class="content__text">Hello, I’m</h5>
+                        <h1 class="content__title">Ryabinin Vitalii</h1>
+                        <span class="section__prof">Web Developer</span>
+                    </div>
+                    <div class="nav__btn">
+                        <button class="btn" data-modal="#section__modal">hire me</button>
+                    </div>
+                </div>
+                <div class="section__photo">
+                    <div  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                        <img class="html" src="../portfolio withoutserver/img/svg/html-1.svg" width="130px" alt="html">
+                    </div>
+
+                    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1700" data-aos-delay="1400">
+                        <img class="css" src="../portfolio withoutserver/img/svg/css-3.svg" width="130px" alt="css">
+                    </div>                    
+                    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1900" data-aos-delay="2600">
+                        <img class="js" src="../portfolio withoutserver/img/svg/javascript-1.svg"  width="130px" alt="js">
+                    </div>
+                </div>
+            </div>   <!-- section__inner -->
+        </div>   <!-- container -->
+    </section>
+
+<!-- ===== социальный блок====== -->
+
+    <div class="footer__social">
+        <a href="https://wa.me/79507176178" class="social__item" target="_blank">
+            <img  src="img/social/svg/whatsapp.svg" width="30px" alt="">
+        </a>
+        <a href="https://vk.com/vitalies" class="social__item" target="_blank">
+            <img src="img/social/svg/вконтакте.svg" width="30px" alt="">
+        </a>
+        <a href="https://www.linkedin.com/in/%D0%B2%D0%B8%D1%82%D0%B0%D0%BB%D0%B8%D0%B9-%D1%80%D1%8F%D0%B1%D0%B8%D0%BD%D0%B8%D0%BD-486264b2" class="social__item" target="_blank">
+            <img src="img/social/svg/линкедин.svg" width="30px" alt="">
+        </a>
+        <a href="mailto:riabinines@yandex.ru" class="social__item" target="_blank">
+            <img src="img/social/svg/почта.svg" width="30px" alt="">
+        </a>
+        <a href="https://t.me/+79507176178" class="social__item" target="_blank">
+            <img src="img/social/svg/телеграмм.svg" width="30px" alt="">
+        </a>
+    </div>
+
+<!-- =========Блок обо мне========= -->
+<section id="section_about">
+    <div class="container">
+        <div class="about_inner">
+            <div class="about_photo" >
+                <img class="items_photo" src="../portfolio withoutserver/img/myImg/my img.png" alt="my_photo">
+                <!-- image/preview.png -->
+            </div>
+            <div class="about_content" >
+                <div class="content_inner">
+                    <h3>ABOUT ME</h3>
+                    <h2>WHO AM I</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in nulla egestas, dignissim elit at, imperdiet eros. Integer tristique posuere purus. Suspendisse placerat, quam vitae ullamcorper sollicitudin, dui ligula molestie massa, sit amet laoreet nibh ex vitae dui. Aenean laoreet pellentesque lacus, eget varius massa mattis quis. Nunc ultrices urna eu nunc lobortis pulvinar. Duis viverra, quam non imperdiet scelerisque, urna nunc consequat velit, in mollis erat nibh in libero.</span>
+                </div>
+                <div class="nav__btn nav__btn--about">
+                    <a href="" class="btn" data-modal="#section__modal">HIRE ME</a>                   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===========my skills============= -->
+
+<div class="skils_window" id="skils_window">
+    <div class="skills_container">
+        <div class="skiils_content">
+                <h5 class="text__resume">RESUME</h5>
+                <div class="blog__resume">
+                    <div class="blog_right">
+                        <h5 class="skills_title">EXPERIENCE</h5>
+                        <span class="education_title">Годы работы:</span>
+                        <span class="education_text">2014-2020</span class="education_text">
+                        <span class="education_title">Место работы:</span>
+                        <span class="education_text">McDonalds</span class="education_text">
+                        <span class="education_title">Должность:</span>
+                        <span class="education_text">Техник-инженер</span class="education_text">
+                        <br><br><br>
+                        <span class="education_title">Годы работы:</span>
+                        <span class="education_text">2020-2022</span class="education_text">
+                        <span class="education_title">Место работы:</span>
+                        <span class="education_text">ООО "ФДВ"</span class="education_text">
+                        <span class="education_title">Должность:</span>
+                        <span class="education_text">Инженер</span class="education_text">
+                        
+                    </div><!-- ----------------blog_right----------------- -->
+                    <div class="blog_left">
+                        <h5 class="skills_title">EDUCATION</h5>
+                            <span class="education_title">Высшее учебное заведение:</span>
+                        <span class="education_text">Инженерно-технологическая академия ЮФУ</span class="education_text">
+                            <span class="education_title">специальность:</span>
+                        <span class="education_text">инженер - программист</span>
+                            <span class="education_title">годы обучения:</span>
+                        <span class="education_text">2009-2015</span>
+                            <h5 class="skills_title">Skills</h5>
+                        <span class="education_title">Препроцессор:</span>
+                            <span class="education_text">Less</span>
+                        <div class="progress_bar">
+                            <div class="bar_left">
+                                <div class="bar_title">HTML</div>
+                                <div class="bar_title">CSS</div>
+                                <div class="bar_title">JS</div>
+                                <div class="bar_title">jquery</div>
+                            </div>
+                            <div class="bar_right">
+                                <div class="bar_item">
+                                    <div class="bar_progress" style="width: 80%;"></div>
+                                </div>
+                                <div class="bar_item">
+                                    <div class="bar_progress" style="width: 80%;"></div>
+                                </div>
+                                <div class="bar_item">
+                                    <div class="bar_progress" style="width: 20%;"></div>
+                                </div>
+                                <div class="bar_item">
+                                    <div class="bar_progress" style="width: 20%;"></div>
+                                </div>
+                            </div>
+                        </div>    <!-- ------progress_bar-------- -->
+                    </div> <!-- ----------------blog_left----------------- -->
+                </div>  <!-- ----------------blog_resume----------------- -->         
+        </div>
+    </div>
+</div>
+
+<!-- ============modal window ========== -->
+<div class="section__window" id="section__modal" >
+    <div class="modal">
+        <!-- <div class="modal__content"> -->
+            <div class="modal_blog">
+                <div class="btn_close" data-close="#section__modal">
+                    <img src="img/modal_social/cross.svg" width="35px" alt="cancel">
+                </div>
+                <div class="title__content">
+                    <h5>LET'S TALK!</h5>
+                    <span>CALL ME OR SEND ME A REQUEST</span>
+                </div>
+                <ul class="info__request">
+                    <li class="info__request_item"><img src="img/modal_social/phone.svg" width="14px;" alt="phone">79507176178</li>
+                    <li class="info__request_item"><img src="img/modal_social/mail.svg" width="14px;" alt="mail">riabinines@yandex.ru</li>
+                </ul>
+                <form class="form__request" action="//formspree.io/riabinines@yandex.ru" method="POST">
+                    <label class="title__request" for="input_email">Adress e-mail</label><br>
+                    <input class="input_form" type="text" name="inputEmail" id="input_email" placeholder="    Adress e-mail"><br>
+                    <label class="title__request" for="input_request">Request</label><br>
+                    <textarea class="textarea_form" name="input_request" id="input_request"  placeholder="    Type your request..."></textarea>
+                    <div class="modal__btn">
+                        <a href="#" class="btn mod--btn" type="submit" value="Send" name="Send">Send</a>
+                    </div>
+                </form>
+
+            </div>  <!-- modal_blog -->
+
+
+            <!-- <div class="modal_img">
+                 <img src="/img/modal_social/IMG.jpg" alt="" width="470px"> 
+                <img src="https://via.placeholder.com/470x676" alt="img">
+            </div>  -->
+        <!-- </div>  modal_content -->
+    </div>  <!--modal -->
+ </div>  <!--section__window -->
+
+<!-- ============footer==================== -->
+<footer>
+    <div class="footer__inner">
+        <span class="footer_text">Good</span>
+        <img src="" alt="">
+        <span class="footer_text">Luck</span>
+    </div>
+</footer>
+
+
+   <!-- https://michalsnik.github.io/aos/ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" ></script>
+    
+
+
+    
+    <script src="assets/aos.js"></script>
+    <script src="assets/jquery.js"></script>
+    
+  
+
+</body>
+</html>

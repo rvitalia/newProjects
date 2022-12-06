@@ -1,0 +1,47 @@
+//main: ../style.less
+.nav__btn{
+    display: inline-flex;
+    margin-top: 3rem;
+}
+.btn{
+    min-width: 20rem;
+    background: none;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: @colorOne;
+    border: 1px solid fade(@colorOne, 70%);
+    border-radius: 30px;
+    padding: 1rem 1rem;
+    text-align: center;
+    transition: color 0.4s linear, background-color 0.4s linear;
+}
+.btn:hover{
+    background-color: fade(@ColorThree, 60%);;
+    color: @colorOne;
+}
+.modal__btn{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+    align-items:center;
+}
+.mod--btn{
+    font-weight: 600;
+    color: @colorOne;
+    margin-top: 2rem;
+}
+.mod--btn:hover{
+    background-color: fade(@colorSix, 60%);;
+    color: @colorOne;
+}
+.nav__btn--about{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0 auto 20px;
+}

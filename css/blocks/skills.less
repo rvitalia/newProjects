@@ -1,0 +1,121 @@
+//main: ../style.less
+.skills_window{
+    width: 100%;
+    height: 100vh;
+}
+.skills_container{
+    max-width: 120rem;
+    max-height:90rem;
+    margin:auto;
+}
+.skills_content{
+    display: flex;
+}
+.text__resume{
+    font-size: 7rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    color: @colorSeven;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+.blog__resume{
+    font-family: inherit;
+    color: @colorOne;
+    text-shadow: 1px 0 1px @ColorThree,
+    0 1px 1px @ColorThree,
+    -1px 0 1px @ColorThree,
+    0 -1px 1px @ColorThree;
+    display: flex;
+    position: relative;
+    margin-bottom: 6rem;
+}
+.blog_right, .blog_left{
+    width: 50%;
+    margin: 0 45px;
+}
+.blog_right{
+    text-align: right;
+}
+.blog_left{
+    text-align: left;
+}
+.blog_left::before{
+    display: block;
+    content: "";
+    width: 3px;
+    height: 90%;
+    background-color: @colorFour;
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    z-index: 1;
+}
+.skills_title{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 2rem 0;
+}
+.education_title{
+    display: block;
+    text-shadow: 1px 0 1px @colorFive,
+    0 1px 1px @colorFive,
+    -1px 0 1px @colorFive,
+    0 -1px 1px @colorFive;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.education_text{
+    display: block;
+    text-shadow: 1px 0 1px @colorEight,
+    0 1px 1px @colorEight,
+    -1px 0 1px @colorEight,
+    0 -1px 1px @colorEight;
+    font-size: 1.4rem;
+}
+
+.progress_bar{
+    max-width: 20rem;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    border: 1px solid fade(@ColorTwo,30%);
+    border-radius: 1rem;
+}
+.bar_title{
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 22px;
+    margin-bottom: 5px;
+}
+.bar_right{
+    width: 150px;
+    padding-left: 15px;
+}
+.bar_item{
+    height: 6px;
+    background-color: @colorOne;
+    margin-bottom: 22px;
+    margin-top: 15px;
+}
+.bar_progress{
+    background-color: @colorFive;
+    height: 6px;
+}

@@ -1,0 +1,36 @@
+//compress: true;
+// sorceMap:true;
+
+@import "blocks/vars.less";
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+body{
+    background-image: url(../img/bacground/rm.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+    &.no-scroll{
+        overflow: hidden;
+    }
+}
+
+@import "blocks/header.less";
+@import "blocks/section.less";
+@import "blocks/container.less";
+@import "blocks/footer__social.less";
+@import "blocks/about.less";
+@import "blocks/btn.less";
+@import "blocks/modal.less";
+@import "blocks/skills.less";
+@import "blocks/footer.less";
