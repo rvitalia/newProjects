@@ -16,6 +16,12 @@
     position: absolute;
     left: 6%;
     bottom: 0;
+
+    @media @tablet-pc{
+        max-width: 37rem;
+        height: auto;
+        bottom:20%;
+    }
 }
 .about_photo::before{
     content: "";
@@ -29,6 +35,13 @@
     filter: blur(9px);
     opacity: 0.8;
     border-radius: 5rem;
+
+    @media @tablet-pc{
+       height: 70%; 
+       position:absolute;
+       bottom: 11rem;
+       left: 4.5rem;        
+    }
 }
 .about_content{
     width: 50%;
@@ -38,23 +51,35 @@
     margin-bottom: 1rem;
 }
 .content_inner h3{
-    font-size: 45px;
+    font-size: 4.5rem;
     font-weight: bold;
     padding-left: 5px;
     text-align: center;
     text-shadow: 4px 3px 0 #7A7A7A, 40px 21px 0px rgba(206,25,70,0);
+
+    @media @tablet-pc{
+        font-size: 3rem;
+    }
 }
 .content_inner h2{
-    font-size: 92px;
+    font-size: 9.2rem;
     font-weight: bold;
     text-shadow: 0px 3px 3px rgba(255,255,255,0.5), 2px -4px 0px #CE1946;
     text-align: center;
+
+    @media @tablet-pc{
+        font-size: 6rem;
+    }
 }
 .content_inner span{
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 300px;
     line-height: 24px;
     padding-left: 5px;
+
+    @media @tablet-pc {
+        font-size: 1rem;
+    }
 }
 
 
