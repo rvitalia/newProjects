@@ -127,3 +127,32 @@
     margin-top: 0.8rem;
     padding-left: 1rem;
 }
+.btn_send{
+    min-width: 20rem;
+    background: none;
+    font-size: 16px;
+    font-family: inherit;
+    line-height: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 1px solid fade(@colorOne, 70%);
+    border-radius: 30px;
+    padding: 1rem;
+    text-align: center;
+    transition: color 0.4s linear, background-color 0.4s linear;
+    font-weight: 600;
+    color: @colorOne;
+    margin-top: 2rem;
+
+    &:hover{
+        background-color: fade(@colorSix, 60%);;
+        color: @colorOne; 
+    }
+
+    @media @tablet{
+        min-width: 12rem;
+        font-size: 1.4rem;
+        padding: 0.5rem 1rem;
+    }
+}
