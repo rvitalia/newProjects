@@ -2,6 +2,10 @@
 .skills_window{
     width: 100%;
     height: 100vh;
+
+    @media @tablet-pc{
+        height: auto;
+    }
 }
 .skills_container{
     max-width: 120rem;
@@ -34,6 +38,11 @@
     1px 22px 10px rgba(16,16,16,0.2),
     1px 25px 35px rgba(16,16,16,0.2),
     1px 30px 60px rgba(16,16,16,0.4);
+    
+    @media @tablet-pc{
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
 }
 .blog__resume{
     font-family: inherit;
@@ -45,10 +54,18 @@
     display: flex;
     position: relative;
     margin-bottom: 6rem;
+
+    @media @tablet-pc{
+        margin-bottom: 1rem;
+    }
 }
 .blog_right, .blog_left{
     width: 50%;
-    margin: 0 45px;
+    margin: 0 4.5rem;
+
+    @media @tablet-pc{
+        margin: 0 3rem;
+    }
 }
 .blog_right{
     text-align: right;
@@ -71,6 +88,11 @@
     font-size: 3rem;
     font-weight: 700;
     margin: 2rem 0;
+
+    @media @tablet-pc{
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
 }
 .education_title{
     display: block;
@@ -80,6 +102,11 @@
     0 -1px 1px @colorFive;
     font-size: 2rem;
     padding: 1rem 0;
+
+    @media @tablet-pc{
+        font-size: 1.4rem;
+        padding: 0.5rem 0;
+    }
 }
 .education_text{
     display: block;
@@ -88,6 +115,10 @@
     -1px 0 1px @colorEight,
     0 -1px 1px @colorEight;
     font-size: 1.4rem;
+
+    @media @tablet-pc{
+        font-size: 1rem;
+    }
 }
 
 .progress_bar{
@@ -98,12 +129,17 @@
     margin-top: 1rem;
     border: 1px solid fade(@ColorTwo,30%);
     border-radius: 1rem;
+
+    @media @tablet-pc{
+        padding: 0;
+        margin-top: 0;
+    }
 }
 .bar_title{
     font-size: 1.4rem;
     font-weight: 300;
     line-height: 22px;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
 }
 .bar_right{
     width: 150px;

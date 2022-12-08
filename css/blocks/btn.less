@@ -16,9 +16,15 @@
     color: @colorOne;
     border: 1px solid fade(@colorOne, 70%);
     border-radius: 30px;
-    padding: 1rem 1rem;
+    padding: 1rem;
     text-align: center;
     transition: color 0.4s linear, background-color 0.4s linear;
+
+    @media @tablet{
+        min-width: 12rem;
+        font-size: 1.4rem;
+        padding: 0.5rem 1rem;
+    }
 }
 .btn:hover{
     background-color: fade(@ColorThree, 60%);;

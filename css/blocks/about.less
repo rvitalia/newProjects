@@ -22,6 +22,9 @@
         height: auto;
         bottom:20%;
     }
+    @media @tablet{
+        display: none;
+    }
 }
 .about_photo::before{
     content: "";
@@ -46,6 +49,13 @@
 .about_content{
     width: 50%;
     margin-top: 15px;
+   
+    @media @tablet{
+        width: 100%;
+        padding: 0 5rem;
+        text-align: justify;
+    }
+
 }
 .content_inner{
     margin-bottom: 1rem;
@@ -60,6 +70,9 @@
     @media @tablet-pc{
         font-size: 3rem;
     }
+    @media @tablet{
+        font-size: 2rem;
+    }
 }
 .content_inner h2{
     font-size: 9.2rem;
@@ -69,6 +82,10 @@
 
     @media @tablet-pc{
         font-size: 6rem;
+    }
+    @media @tablet{
+        font-size: 5rem;
+        padding: 1rem 0;
     }
 }
 .content_inner span{
