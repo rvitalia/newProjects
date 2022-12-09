@@ -16,21 +16,26 @@
     display: block;
     position: absolute;
     left: 6%;
-    bottom: 0;
+    bottom:0;
 
     @media @tablet-pc{
         max-width: 30rem;
         height: auto;
-}
+        bottom: 0;
+    }
     @media @tablet{
         display: none;
-}
+    }
 }
 .about_photo::before{
     content: "";
     display: block;
     width: 65%;
-    height: 100%;
+    height: 80%;
+    position:absolute;
+    left: 10%;
+    bottom: 0;
+    z-index: -1;
     background-image: url(../img/myImg/pexels.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -41,8 +46,6 @@
 
     @media @tablet-pc{
        height: 70%; 
-       position:absolute;
-       bottom: 11rem;
        left: 4.5rem;        
     }
     @media @tablet{
@@ -99,12 +102,16 @@
 }
 .content_inner span{
     font-size: 1.8rem;
-    font-weight: 300px;
-    line-height: 2.7rem;
+    font-weight: 400;
+    line-height: 1.5;
     padding-left: 5px;
 
+    & p{
+        font-size: inherit;
+    }
+
     @media @tablet-pc {
-        font-size: 1rem;
+        font-size: 1.8rem;
     }
 }
 
