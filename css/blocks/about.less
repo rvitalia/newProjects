@@ -8,8 +8,9 @@
     color: @colorOne;
 }
 .about_photo{
-    width: 50%;
+    width: 40%;
     position: relative;
+    padding-left: 2rem;
 }
 .items_photo{
     display: block;
@@ -18,13 +19,12 @@
     bottom: 0;
 
     @media @tablet-pc{
-        max-width: 37rem;
+        max-width: 30rem;
         height: auto;
-        bottom:20%;
-    }
+}
     @media @tablet{
         display: none;
-    }
+}
 }
 .about_photo::before{
     content: "";
@@ -45,15 +45,21 @@
        bottom: 11rem;
        left: 4.5rem;        
     }
+    @media @tablet{
+        display: none;
+    }
 }
 .about_content{
-    width: 50%;
+    width: 60%;
     margin-top: 15px;
-   
+    padding-right: 2rem;
     @media @tablet{
         width: 100%;
         padding: 0 5rem;
         text-align: justify;
+    }
+    @media @tablet{
+        position: relative;
     }
 
 }
